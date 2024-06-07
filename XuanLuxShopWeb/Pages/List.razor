@@ -1,6 +1,29 @@
 ﻿@page "/list"
 <h3>List</h3>
-
+<table>
+    <tr>
+        <th>商品ID</th>
+        <th>商品名稱</th>
+        <th>商品圖片</th>
+    </tr>
+    @foreach (var item in proList)
+    {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.ProductName</td>
+            <td>@item.ThumbnaiImage</td>
+        </tr>
+    }
+</table>
 @code {
+    private List<Models.Product>? proList; //宣告一個list 類行為Product 用來承接查詢結果
+    private Repository.IProduct _product; //接口
 
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _product = new Repository.Implement.ProductRepository(); //接口 - 實作接口
+        proList = _product.GetAll(); //將proList賦值為_product接口中的GetAll方法之查詢結果(回傳值)
+    }
 }

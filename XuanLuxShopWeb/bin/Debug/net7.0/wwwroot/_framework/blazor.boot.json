@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-gEh2pbf9QBKUbbQNDp178pkm5vz7xXFGhpFgUcAhyTE=",
       "netstandard.dll": "sha256-IEYNogoWZgSKXlx0+Pn2bt3irEZ1nuCnjK9Bm+3OWYw=",
       "System.Private.CoreLib.dll": "sha256-XrgDwG5fUErLSziY3dAwA0PYLIirTlornT8Lb6U2DUs=",
-      "XuanLuxShopWeb.dll": "sha256-EB+qT92NNsvJtpzc6bcj3Hqph3L1Ic4+DmCTi4zMMN4="
+      "XuanLuxShopWeb.dll": "sha256-ihzeQxbgDMmimehLbSLfZdx7jD+Wt1O1OkSolbyWV2U="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "XuanLuxShopWeb.pdb": "sha256-brlYX3JsulGIfPpLm9yrFY6yiamog8N5bfPMg7xW1II="
+      "XuanLuxShopWeb.pdb": "sha256-XpTeeJDJjyH62u8\/y3W6TnrEPHJ28nnLSunxwbL+W8A="
     },
     "runtime": {
       "dotnet.7.0.7.5gsimagkk3.js": "sha256-JmMF+3r0RjsO0yYBfDP8Pq2ahxBSJHFu7mZNB9lqLsw=",

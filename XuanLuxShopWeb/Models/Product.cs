@@ -2,8 +2,8 @@
 {
     public class Product
     {
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public string ThumbnaiImage { get; set; }
+        public int? ProductID { get; set; }
+        public string? ProductName { get; set; }
+        public string? ThumbnaiImage { get; set; }
     }
 }
