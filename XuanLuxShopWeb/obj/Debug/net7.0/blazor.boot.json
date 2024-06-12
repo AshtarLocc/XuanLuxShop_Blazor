@@ -7,8 +7,10 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "AntDesign.dll": "sha256-xruzJt1VAHtK+r4wYIOK+LsmrVWKt4BnbVYdf6tk9hI=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-3H1\/2dJ6LCSFrDwMxcIF9c89g7e2WDms+gUxX9yXsCE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-T7VsejmD8iW5KFy8++BoXVdY1Mc4VSTAdBlkPiyQmKg=",
+      "Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll": "sha256-VGaB03HIjFg4jeK7BomIFzlhhY3vW5N+jWuRqZkbJsY=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-t\/7w6In5F1noaAg32epZHTmof5Qv+lCIKNaCVqoB79E=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-YmlBecd3hNXH2\/s9oWO\/KTqbqmkbqmVYmXxgkMQ03PA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-MQsZTrsSMiRpkOK4Tuq6eZbj6Za7Mh1lGO0DSUuBTLQ=",
@@ -29,6 +31,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-q4ruoDSCjV\/QJY9ZkzV6uxvEvZUVrDbyUjU3SSh5SlE=",
       "Microsoft.JSInterop.dll": "sha256-iq+vRLnSUjAWfacvuHUzEBq6Ji+CCs3fPZfpgwV7ffs=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-hhSiFTsNnxm9Lv6Tf7HHWd6JugiiBt2d7EHFmhMcOj4=",
+      "OneOf.dll": "sha256-K99lDyL6VrtTDYGRk5o+Q3caW25Uogee\/1e7aIvpgLY=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
       "Microsoft.CSharp.dll": "sha256-iH6Tn6Krqp7Eu+i6UKU251YnboC1NvS2kKTgJGxQHeY=",
       "Microsoft.VisualBasic.Core.dll": "sha256-mj+TP7hE2qcz40xB1Lxlb4haovSOBXaEeaj7\/MX8SQg=",
@@ -198,13 +201,15 @@
       "mscorlib.dll": "sha256-gEh2pbf9QBKUbbQNDp178pkm5vz7xXFGhpFgUcAhyTE=",
       "netstandard.dll": "sha256-IEYNogoWZgSKXlx0+Pn2bt3irEZ1nuCnjK9Bm+3OWYw=",
       "System.Private.CoreLib.dll": "sha256-XrgDwG5fUErLSziY3dAwA0PYLIirTlornT8Lb6U2DUs=",
-      "XuanLuxShopWeb.dll": "sha256-ihzeQxbgDMmimehLbSLfZdx7jD+Wt1O1OkSolbyWV2U="
+      "XuanLuxShopWeb.dll": "sha256-hr02RvJx2SsP0e+pug9ABKs35sDuI5PhKEUzsEpEOqE="
     },
     "extensions": null,
     "lazyAssembly": null,
-    "libraryInitializers": null,
+    "libraryInitializers": {
+      "_content\/AntDesign\/AntDesign.lib.module.js": "sha256-Y7oJ7\/rOncGnhfBrDAPc045cW9bF4cp1INbpZClDsxM="
+    },
     "pdb": {
-      "XuanLuxShopWeb.pdb": "sha256-XpTeeJDJjyH62u8\/y3W6TnrEPHJ28nnLSunxwbL+W8A="
+      "XuanLuxShopWeb.pdb": "sha256-zR1DoPCfi3gHHzvjG9habb\/udTsCJXoGjZVrjLnYVGQ="
     },
     "runtime": {
       "dotnet.7.0.7.5gsimagkk3.js": "sha256-JmMF+3r0RjsO0yYBfDP8Pq2ahxBSJHFu7mZNB9lqLsw=",

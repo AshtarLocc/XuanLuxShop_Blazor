@@ -1,10 +1,14 @@
 ﻿@page "/list"
+@inject Repository.IProduct _product;
+@inject IMessageService _message
+@inject NavigationManager NavigationManager
 <h3>List</h3>
-<table>
+<table class="productTable">
     <tr>
         <th>商品ID</th>
         <th>商品名稱</th>
         <th>商品圖片</th>
+        <th>Action</th>
     </tr>
     @foreach (var item in proList)
     {
@@ -12,18 +16,43 @@
             <td>@item.ProductID</td>
             <td>@item.ProductName</td>
             <td>@item.ThumbnaiImage</td>
+            <td>
+                <Button Type="ButtonType.Danger" OnClick="@(() => EditItem(item.ProductID))">
+                    編輯
+                </Button>
+                <Popconfirm Title="是否確認刪除?"
+                            OnConfirm="()=>Confirm(item.ProductID)"
+                            OnCancel="Cancel">
+                    <Button Danger Type="@ButtonType.Primary">
+                        刪除
+                    </Button>
+                </Popconfirm>
+            </td>
         </tr>
     }
 </table>
 @code {
     private List<Models.Product>? proList; //宣告一個list 類行為Product 用來承接查詢結果
-    private Repository.IProduct _product; //接口
-
 
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        _product = new Repository.Implement.ProductRepository(); //接口 - 實作接口
         proList = _product.GetAll(); //將proList賦值為_product接口中的GetAll方法之查詢結果(回傳值)
+    }
+
+    private void Confirm(int id)
+    {
+        _product.Delete(id);
+        _message.Success("已刪除");
+    }
+
+    private void Cancel()
+    {
+        _message.Error("取消刪除");
+    }
+
+    private void EditItem(int id)
+    {
+        NavigationManager.NavigateTo($"/add/{id}");
     }
 }

@@ -1,6 +1,63 @@
-﻿@page "/add"
-<h3>Add</h3>
+﻿@page "/add/{Id:int?}"
+@inject Repository.IProduct _product;
+@inject IMessageService _message
+@inject NavigationManager NavigationManager
+@using System.ComponentModel.DataAnnotations;
+<h3>@btnText</h3>
 
+<Form Model="@productModel"
+      OnFinish="HandleSubmit"
+      LabelColSpan="8"
+      WrapperColSpan="16">
+    <FormItem Label="商品名稱">
+        <Input @bind-Value="@productModel.ProductName" />
+    </FormItem>
+    <FormItem Label="商品圖片">
+        <Input @bind-Value="@productModel.ThumbnaiImage" />
+    </FormItem>
+    <FormItem WrapperColOffset="8" WrapperColSpan="16">
+        <Button Type="@ButtonType.Primary" HtmlType="submit">
+            @btnText
+        </Button>
+    </FormItem>
+</Form>
 @code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private Models.Product productModel = new();
+    private string res = "";
+    private string btnText = "新增";
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        if (Id.HasValue)
+        {
+            productModel = _product.GetById(Id.Value);
+            btnText = "編輯";        }
+    }
+
+    private void HandleSubmit()
+    {
+        Console.WriteLine($"提交: 名稱 - {productModel.ProductName}");
+        Console.WriteLine($"提交: 圖片 - {productModel.ThumbnaiImage}");
+        if (Id.HasValue)
+        {
+            _product.Update(productModel);
+            res = $"編輯成功 {DateTime.Now}";
+            _message.Info($"{res}");
+            NavigationManager.NavigateTo($"/list");
+            
+        }
+        else
+        {
+            productModel.ProductID = new Random().Next(5, 10000);
+            _product.Add(productModel);
+            res = $"新增成功 {DateTime.Now}";
+            _message.Info($"{res}");
+            NavigationManager.NavigateTo($"/list");
+        }
+    }
 
 }

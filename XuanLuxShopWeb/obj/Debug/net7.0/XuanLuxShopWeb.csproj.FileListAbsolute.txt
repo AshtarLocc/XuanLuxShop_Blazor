@@ -826,3 +826,16 @@ C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\
 C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\refint\XuanLuxShopWeb.dll
 C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\XuanLuxShopWeb.pdb
 C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\ref\XuanLuxShopWeb.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\AntDesign.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\OneOf.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\AntDesign.dll.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\OneOf.dll.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\AntDesign.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\bin\Debug\net7.0\OneOf.dll
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\build-gz\q2MAlseV.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\build-gz\u4faxt5+.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\build-gz\sZVpgXmz.gz
+C:\Users\IT0194\Desktop\XuanLuxShop\XuanLuxShop\XuanLuxShopWeb\obj\Debug\net7.0\jsmodules\jsmodules.build.manifest.json

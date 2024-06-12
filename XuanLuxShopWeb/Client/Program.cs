@@ -14,6 +14,12 @@ namespace XuanLuxShopWeb
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
+            //ª`¤J
+            builder.Services.AddSingleton<Repository.IProduct, Repository.Implement.ProductRepository>();
+
+            //µù¥UAntDesign
+            builder.Services.AddAntDesign();
+
             await builder.Build().RunAsync();
         }
     }
